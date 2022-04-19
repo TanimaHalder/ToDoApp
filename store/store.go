@@ -14,6 +14,7 @@ type dbInterface interface {
 	GetOne(s *types.Todo, id int) (t types.Todo)
 }
 
+//returns pointer to a struct
 func New() *DB {
 	return &DB{}
 }
